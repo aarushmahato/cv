@@ -1,0 +1,613 @@
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+body{
+    background-color: #292932;
+}
+#header{
+    display:flex;
+    z-index: 9999999;
+    justify-content: space-between;
+    background-color: #1c1c2253;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    box-shadow: 10px 10px 20px -10px rgba(43, 43, 43, 0.355);
+}
+#logo img {
+    height: 80px;
+}
+#logo{
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+
+    transition: 1s;
+}
+#logo:hover{
+    box-shadow:  8px 8px 5px #101014,
+             -8px -8px 5px #424250;
+
+    transition: 1s;
+}
+#left_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#right_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu ul{
+    list-style: none;
+    display: flex;
+}
+#menu ul li a:hover{
+    color: #858585;
+    transition: 1s;
+    border-bottom: 1px solid #858585 ;
+    
+}
+#menu ul li a{
+    transition: 1s;
+    padding-bottom: 5px;
+    color:#858585;
+}
+#menu ul li  .active
+{
+   color: white;
+   border-bottom: white solid 2px;
+}
+#menu ul li {
+    margin: 15px;
+
+}
+#logo_name a{
+    font-size: 40px;
+}
+#rush{
+    color: red;
+}
+#hire{
+    padding: 20px;
+    border-radius:10px;
+    background: #292932;
+    box-shadow:  8px 8px 16px #101014,
+                 -8px -8px 16px #424250;
+    transition: 1s;
+}
+#hire #me {
+    color: red;
+    transition: 1s;
+}
+#hire h3{
+    transition: 1s;
+}
+#hire:hover{
+    background-color:rgba(0, 0, 0, 0.528);
+    transform: translateY(-5px);
+    transition: 1s;
+}
+#hire:hover h3{
+    color: red;
+    transition: 1s;
+}
+#hire:hover #me{
+    color: white;
+    transition: 1s;
+}
+#intro{
+    grid-area: intro;
+}
+#find_skill{
+    grid-area: findskill;
+}
+#profile_photo{
+    grid-area: profilephoto;
+    height: 500px;
+    width: 400px;
+    border-radius: 25px;
+    background: #292932;
+    box-shadow:  8px 8px 16px #101014,
+                 -8px -8px 16px #424250;
+             margin: 0px 100px 0px 100px;
+    
+}
+
+#header_ko_tala{
+    display: grid;
+    grid-template-areas:'intro profilephoto '
+                        'findskill profilephoto ' ;
+                        justify-content: space-around;
+                        align-items: center;
+                        border-bottom: black 2px solid;
+                        padding: 100px 50px;
+}
+#welcome_world{
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+#hi_text,#a-text{
+    font-size: 50px;
+    font-weight: 1000;
+}
+#hi_text #aarush{
+    color: rgb(252, 110, 133);
+    margin: 15px ;
+}
+#animate_text{
+    overflow: hidden;
+    width: 100px;
+}
+#bio{
+    margin: 50px 0;
+    font-size: 20px;
+}
+#find_skill{
+    display: flex;
+    justify-content: space-between;
+}
+#skill_logo i,.social_logo i{
+    padding: 20px;
+    margin: 40px 40px 20px 0;
+    border-radius: 10px;
+    background: #292932;
+    box-shadow:  8px 8px 16px #101014,
+                 -8px -8px 16px #424250;
+             font-size: 20px;
+
+}
+#skill_logo i{
+    color: rgb(246, 102, 126);
+}
+.social_logo i{
+    transition: 1s;
+}
+.social_logo i:hover{
+    transform: translateY(-8px);
+    transition: 1s;
+    color: grey;
+}
+.social_logo a:hover i{
+    background: linear-gradient(145deg,rgba(0, 0, 0, 0.356),rgba(255, 170, 170, 0.133));
+/* background-color: red; */
+}
+
+
+/* footer  */
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+#foot_logo img{
+    height: 100px;
+}
+#foot_logo{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+    transition: 1s;
+    margin-left: 60px;
+}
+#foot_header:hover #foot_logo{
+    box-shadow:  8px 8px 5px #101014,
+             -8px -8px 5px #424250;
+
+    transition: 1s;
+}
+#foot_logo_name {
+     font-size: 50px; 
+     margin: 20px; 
+}
+#foot_rush{
+    color: red;
+}
+#foot_header{
+    display: flex;
+    flex-direction: column;
+}
+#footer div:nth-child(2) a{
+            color: rgb(241, 114, 135);
+}
+
+/* feature */
+
+#feature{
+    margin: 10em 10% 0 10%;
+    border-bottom: solid 2px rgb(90, 90, 90);
+}
+#feature #feature_text{
+
+    color: rgb(253, 54, 54);
+    letter-spacing: 4px;
+}
+#feature #what_i_do {
+    font-size: 5em;
+    margin: 20px 0;
+}
+#what_do_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10em;
+}
+.feature_item{
+    height:330px;
+    width: 330px;
+    border-radius: 20px;
+    background: #292932;
+box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+             margin: 30px 10px;
+             padding: 50px;
+             transition: 1s;
+    
+}
+.feature_item span:nth-child(1) i{ 
+    font-size: 50px;
+    color: rgb(228, 99, 121);
+
+}
+.feature_item .angle_arrow i{ 
+font-size: 2em;
+margin: 10px;
+float: right;
+color:aqua ;
+visibility: hidden;
+transition: 0.2s;
+}
+.feature_item h2{ 
+     margin: 20px 0;
+}
+.feature_item p{ 
+    letter-spacing: 2px;
+}
+.feature_item:hover{
+    background: linear-gradient(145deg,rgba(0, 0, 0, 0.597),rgba(3, 3, 3, 0.133));
+       transition: 1s;
+}
+.feature_item:hover .feature_hover{
+       transition: 1s;
+       transform: translateY(-10px);
+}
+.feature_item:hover .feature_hover .angle_arrow i{
+       transition: 1s;
+       visibility: visible;
+}
+
+.feature_item .feature_hover{
+       transition: 1s;
+}
+.portfolio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10em 10% 0 10%;
+    border-bottom: solid 2px rgb(90, 90, 90);
+}
+.portfolio .portfolio_text{
+    letter-spacing: 3px;
+    color: red;
+
+    font-weight: 800;
+}
+.portfolio .my_portfolio{
+    letter-spacing: 3px;
+    font-size: 3em;
+    font-weight: 800;
+    margin: 20px;
+
+}
+.portphoto  img{
+    height: 200px;
+    transition: 1s;
+}
+.portphoto{
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0 20px 20px;
+    height: 200px;
+    width: 200px;
+    border: solid 2px;
+}
+.portfolio_item{
+    border-radius: 20px;
+    background: #292932;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+             padding: 30px;
+             width: 300px;
+             margin: 30px 0;
+             transition: 1s;
+             
+}
+.like_name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.like_name .dev_text{
+    color: red;
+    font-weight: 600;
+}
+.discpofphoto{
+    margin-top: 20px;
+    font-size: 1.5em;
+    padding: 10px;
+    transition: 1s;
+}
+.portfolio_item:hover{
+    transition: 1s;
+    background: linear-gradient(145deg,rgba(0, 0, 0, 0.597),rgba(3, 3, 3, 0.133));
+}
+.portfolio_item:hover .portphoto  img{
+    transition: 1s;
+height: 250px;
+}
+.discpofphoto .fa-arrow-right{
+    color:rgb(229, 100, 122);
+    margin-top: 10px;
+    visibility: hidden;
+}
+.portfolio_item:hover .discpofphoto .fa-arrow-right{
+    visibility: visible;
+}
+#portfolio_gallery{
+    display: flex;
+justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+}
+.like_name .fa-heart:hover{
+   color: red;
+   transition: 1s;
+}
+.like_name .fa-heart{
+   transition: 1s;
+}
+.discpofphoto .fa-arrow-right
+{
+    transition: 0.5s;
+}
+.discpofphoto:hover{
+    color: red;
+    transition: 1s;
+}
+#contact_details{
+    
+    width: 480px;
+    padding:40px;
+    border-radius: 20px;
+    background: #292932;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+}
+#contact_details:hover #contact_image img{
+      width: 450px;
+      transition: 1s;
+}
+#contact_image img{
+    width: 400px;
+    
+    transition: 1s;
+}
+#contact_image{
+    border-radius: 40px;
+    overflow: hidden;
+    width: 400px;
+    height:230px;
+}
+#arush_mhto{
+    font-size: 2.5em;
+    margin: 10px;
+}
+.gray_text{
+    color: grey;
+    margin: 20px;
+    font-size: 1.1em;
+}
+.contact_detail{
+    margin:10px 0;
+}
+.contact_social{
+    margin: 40px 0 -20px 0 ;
+
+}
+#contact_detail_option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8em 0;
+}
+#contact_form{
+    width: 500px;
+    margin-left: 100px;
+    border-radius: 20px;
+    background: #292932;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+             padding: 40px;
+}
+#name_number{
+    display: flex;
+}
+form input{
+    border-radius: 10px;
+    background: #292932;
+box-shadow: inset 3px 3px 13px #111115,
+            inset -3px -3px 13px #41414f;
+    height: 3.8em; 
+    width: 100%;
+    margin: 30px 0;
+ }
+ .your_number{
+    margin-right: 70px;
+ }
+ #button{
+    border-radius: 20px;
+    background: #292932;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+             padding: 20px;
+             text-align: center;
+             
+     transition: 1s;
+     margin: 20px 0;
+            }
+ #button span{
+                
+     color: red;
+     font-weight: 800;
+ }
+ #button:hover{
+    background: linear-gradient(145deg,rgba(0, 0, 0, 0.356),rgba(255, 170, 170, 0.133));
+transition: 1s; 
+
+transform: translateY(-5px);
+
+ }
+ #button span i{
+    color: red;
+ }
+ input{
+    border: none;
+ }
+ .tabs{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    background: #292932;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+             margin: 50px 0;
+ }
+ .tabs li{
+    width: 25%;
+    text-align: center;display: flex;
+    align-items: center;
+  transition: 1s;
+  justify-content: center;
+    
+ }
+ .tabs li.active{
+    background: #25252d;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+  color: red;
+  padding: 40px 0;
+  border-radius: 20px;
+  font-weight: 900;
+
+    
+ }
+ .tabs li:hover{
+    background: #25252d;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+  color: red;
+  padding: 40px 0;
+  border-radius: 20px;
+  font-weight: 900;
+  transition: 1s;
+
+    
+ }
+ .content{
+    display: flex;
+    justify-content: center;
+ }
+ .education_quality{
+    font-size: 2em;
+    margin: 20px 0 40px 0;
+ }
+.resume_every{
+    background: #25252d;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    transition: 1s;
+    margin-bottom:40px ;
+}
+.resume_every::before{
+    content: '';
+    position: absolute;
+    top: -5%;
+    left: -10%;
+    height: 111%;
+    border-radius: 10px;
+    width: 5px;
+    background-color: rgba(124, 124, 124, 0.568);
+
+}
+.resume_every::after{
+    content: '';
+    position: absolute;
+    bottom: -7%;
+    left: -10%;
+    
+    border-radius: 10px;
+    height: 5px;
+    z-index: 00000;
+    width: 100%;
+    background-color: rgba(124, 124, 124, 0.568);
+
+}
+.resume_right{
+    margin: 40px;
+}
+.resume_left{
+    margin: 40px;
+}
+.resume_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.433);
+    
+}
+.rating{
+    border-radius: 10px;
+    background: #25252d;
+    box-shadow:  8px 8px 16px #101014,
+             -8px -8px 16px #424250;
+    padding: 15px 10px;
+}
+.resume_intro{
+    margin: 20px 0;
+}
+.resume_discp{
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+.resume_every:hover{
+    background: linear-gradient(145deg,rgba(0, 0, 0, 0.53),rgba(25, 25, 25, 0.492));
+    transition: 1s;
+}
